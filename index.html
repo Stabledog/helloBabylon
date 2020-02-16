@@ -19,22 +19,10 @@
                 touch-action: none;
             }
         </style>
+        <script src="game.js"></script>
     </head>
     <body>
         <canvas id="renderCanvas"></canvas>
-        <script>
-            window.addEventListener('DOMContentLoaded',function() {
-                var engine = new BABYLON.Engine(canvas,true);
-
-                var createScene = function() {
-                    var scene = new BABYLON.Scene(engine);
-                    var camera = new BABYLON.FreeCamera('camera',new BABYLON.Vector3(0,5,-10),scene);
-                    camera.setTarget(BABYLON.Vector3.Zero());
-                    camera.attachControl(canvas,false)
-
-                };
-            });
-        </script>
     </body>
 </html>
 
